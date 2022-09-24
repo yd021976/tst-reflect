@@ -3,7 +3,12 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/app",
-    "types": []
+    "types": [],
+    "plugins": [
+      {
+        "transform": "tst-reflect-transformer"
+      },
+    ]
   },
   "files": [
     "src/main.ts",
