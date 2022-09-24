@@ -10,6 +10,7 @@ import { getType } from 'tst-reflect';
 })
 export class AppComponent implements OnInit {
   title = 'tst-reflect';
+  foo: CTest = new CTest()
 
   ngOnInit() {
     const t = getType<ITest>() // work
