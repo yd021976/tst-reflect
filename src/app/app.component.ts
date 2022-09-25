@@ -20,6 +20,6 @@ export class AppComponent implements OnInit {
      * It seems because the "reflect_id" of class CTest is not found in the tst-reflect "store" property 
      */
     const test = new CTest()
-
+    let t3 = getType(test)
   }
 }
