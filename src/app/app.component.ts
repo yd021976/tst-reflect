@@ -21,5 +21,7 @@ export class AppComponent implements OnInit {
      */
     const test = new CTest()
     let t3 = getType(test)
+    let t4 = t3.isSubclassOf(t)
+    let t5 = t3.isDerivedFrom(t)
   }
 }

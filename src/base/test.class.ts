@@ -1,9 +1,8 @@
 import { ITest } from "./test.interface";
 
-export class CTest {
+export class CTest extends ITest {
     protected foo: string = ''
     constructor() {
+        super()
     }
 }
-
-export class CTest2 {}
