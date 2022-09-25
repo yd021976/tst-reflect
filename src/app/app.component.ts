@@ -16,9 +16,6 @@ export class AppComponent implements OnInit {
     const t = getType<ITest>() // work : Type found
     const t2 = getType<CTest>() // work : type found
     
-    /** This will not work : The type of <test> runtime var is not found.
-     * It seems because the "reflect_id" of class CTest is not found in the tst-reflect "store" property 
-     */
     const test = new CTest()
     let t3 = getType(test)
     let t4 = t3.isSubclassOf(t)
