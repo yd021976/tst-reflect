@@ -1,3 +1,3 @@
-export interface ITest {
-    foo:string
+export abstract class ITest {
+    protected abstract foo:string;
 }

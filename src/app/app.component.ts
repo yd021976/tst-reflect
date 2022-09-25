@@ -13,7 +13,13 @@ export class AppComponent implements OnInit {
   foo: CTest = new CTest()
 
   ngOnInit() {
-    const t = getType<ITest>() // work
-    const t2 = getType<AppComponent>() // generate error "Module not found: Error: Can't resolve './../base/test.class.js' in '/Users/tigrou/Programming/www/Tests/Angular/tst-reflect/src/app'"
+    const t = getType<ITest>() // work : Type found
+    const t2 = getType<CTest>() // work : type found
+    
+    /** This will not work : The type of <test> runtime var is not found.
+     * It seems because the "reflect_id" of class CTest is not found in the tst-reflect "store" property 
+     */
+    const test = new CTest()
+
   }
 }

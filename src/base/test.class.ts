@@ -1,6 +1,9 @@
 import { ITest } from "./test.interface";
 
 export class CTest {
-    public foo: ITest = { foo: '' }
-    constructor() { }
+    protected foo: string = ''
+    constructor() {
+    }
 }
+
+export class CTest2 {}
