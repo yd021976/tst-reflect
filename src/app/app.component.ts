@@ -14,6 +14,6 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     const t = getType<ITest>() // work
-    const t2 = getType<CTest>() // generate error "Module not found: Error: Can't resolve './../base/test.class.js' in '/Users/tigrou/Programming/www/Tests/Angular/tst-reflect/src/app'"
+    const t2 = getType<AppComponent>() // generate error "Module not found: Error: Can't resolve './../base/test.class.js' in '/Users/tigrou/Programming/www/Tests/Angular/tst-reflect/src/app'"
   }
 }
